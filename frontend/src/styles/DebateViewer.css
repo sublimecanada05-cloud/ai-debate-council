@@ -1,0 +1,178 @@
+.debate-viewer {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.debate-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.debate-header h2 {
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.debate-topic {
+  color: #cbd5e1;
+  font-style: italic;
+}
+
+.personalities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.personality {
+  background: rgba(15, 23, 42, 0.5);
+  border-left: 4px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.personality:hover {
+  background: rgba(15, 23, 42, 0.8);
+  transform: translateY(-2px);
+}
+
+.personality-header {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+
+.personality-info h4 {
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.role {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.personality-status {
+  font-size: 0.9rem;
+}
+
+.status-complete {
+  color: #4ade80;
+}
+
+.status-thinking {
+  color: #f59e0b;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.status-waiting {
+  color: #94a3b8;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.debate-rounds {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.round {
+  background: rgba(15, 23, 42, 0.5);
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.round-header h4 {
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.round-content {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #94a3b8;
+}
+
+.waiting-panel {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(96, 165, 250, 0.2);
+  border-top: 3px solid #60a5fa;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.waiting-panel h3 {
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.waiting-panel p {
+  color: #94a3b8;
+}
+
+.info-panel {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.info-panel h3 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.info-panel ol {
+  margin-left: 1.5rem;
+  color: #cbd5e1;
+}
+
+.info-panel li {
+  margin-bottom: 0.5rem;
+}

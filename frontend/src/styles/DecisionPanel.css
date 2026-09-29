@@ -1,0 +1,164 @@
+.decision-panel {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.decision-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.decision-header h2 {
+  color: #60a5fa;
+}
+
+.recommendation-box {
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.recommendation-box h3 {
+  color: #60a5fa;
+  margin: 0;
+}
+
+.confidence-section {
+  margin-bottom: 2rem;
+}
+
+.confidence-section h4 {
+  color: #cbd5e1;
+  margin-bottom: 0.75rem;
+}
+
+.confidence-bar {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.confidence-fill {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  height: 100%;
+  transition: width 0.5s ease-out;
+}
+
+.confidence-percentage {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.reasoning-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.reasoning-item {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.reasoning-item h5 {
+  color: #cbd5e1;
+  margin-bottom: 0.75rem;
+}
+
+.reasoning-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reasoning-item li {
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.reasoning-item li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #60a5fa;
+}
+
+.action-plan-section,
+.timeline-section,
+.risks-section {
+  margin-bottom: 2rem;
+}
+
+.action-plan-section h4,
+.timeline-section h4,
+.risks-section h4 {
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.action-item {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.action-day {
+  background: #3b82f6;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.action-text {
+  color: #cbd5e1;
+}
+
+.risks-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.risks-section li {
+  background: rgba(15, 23, 42, 0.5);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  color: #cbd5e1;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.risks-section li:before {
+  content: "⚠️";
+  position: absolute;
+  left: 0.5rem;
+}
+
+.btn-start-new {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .reasoning-section {
+    grid-template-columns: 1fr;
+  }
+}
